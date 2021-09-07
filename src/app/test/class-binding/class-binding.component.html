@@ -1,0 +1,11 @@
+<h1 class="text-success">Heading 1</h1>
+<h1 [class]="successClass">Some Heading</h1>
+<br>
+<h1 [class.text-danger]="hasError">
+    Some other heading
+</h1>
+
+<input type="text" class="form-control" [class.is-invalid]="hasError"/>
+<h1 [ngClass]="customStyle">Custom Style</h1>
+
+

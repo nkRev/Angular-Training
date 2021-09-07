@@ -1,0 +1,28 @@
+<h1>Employee List</h1>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Salary</th>
+      <th>Date of Birth</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="
+        let employee of employees;
+        index as i;
+        first as f;
+        last as l;
+      "
+    >
+      <td>{{ employee.code | uppercase}}</td>
+      <td>{{ employee.name | title : employee.gender }}</td>
+      <td>{{ employee.gender }}</td>
+      <td>{{ employee.salary | currency: 'USD' }}</td>
+      <td>{{ employee.DOB | date: 'medium' }}</td>
+    </tr>
+  </tbody>
+</table>

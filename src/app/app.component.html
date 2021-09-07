@@ -1,12 +1,36 @@
-<app-navbar></app-navbar>
-<app-header></app-header>
-<div class="row">
-  <div class="col-lg-3">
-    <app-sidebar></app-sidebar>
-  </div>
-  <div class="col-lg-9">
-    <app-main-content></app-main-content>
-  </div>
-</div>
-<app-footer></app-footer>
+<!--<div>
+  <h1>App component(parent)</h1> -->
+  <!-- {{message}} -->
+  <!-- 
+<app-test (childEvent)="message=$event" [childData]="parentData"></app-test>
+-->
+  <!-- [@Input variable name] = <app.component.ts varible name> -->
+  <!--<app-counter [counterNumber]="count"> </app-counter> -->
 
+  <!-- ( @Output /Event Emitter variable name)-->
+  <!--<app-counter-btns (change)="count = $event"></app-counter-btns>
+</div>
+
+
+<div>
+  <app-employee-list-input-output></app-employee-list-input-output>
+
+<br>
+
+<app-employee-detail-input-output></app-employee-detail-input-output>
+</div>
+-->
+<!-- <div>
+  <app-post></app-post>
+</div> -->
+
+<!-- <div>
+  <app-post2></app-post2>
+</div> -->
+
+<div>
+  <marquee behavior="" direction="">if this is still moving without restarting, page did not refresh</marquee>
+  <a routerLink = "/department" class="btn btn-outline-primary">Department</a>
+  <a routerLink = "/employee" class="btn btn-outline-primary">Employee</a>
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,12 @@
+<h1>{{ message }}</h1>
+<button (click)="onButtonClick()">Click Me!</button>
+<input type="text" (change)="onChange()"/>
+
+<br>
+
+<input type="text" #myInput /> <button (click)="onGetValue(myInput.value)">Get the value</button>
+
+<hr>
+<br>
+<textarea name="textbox1" id="textbox1" #myText (keyup)="onKeyUp(myText.value)" cols="30" rows="10" maxlength="140"></textarea>
+<h1>{{ 140-comment.length }}</h1>
